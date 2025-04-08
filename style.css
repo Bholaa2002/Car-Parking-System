@@ -1,0 +1,822 @@
+/* ================= Login Page Specific Styling ================= */
+.login-page .container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+    width: 420px;
+    text-align: center;
+    animation: fadeIn 1.2s ease;
+}
+
+.login-page .login-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.login-page .login-subtitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.login-page input[type="text"],
+.login-page input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-page .btn {
+    width: 95%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.login-page .btn:hover {
+    background-color: #0056b3;
+}
+
+.login-page .admin-btn {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.login-page .admin-btn:hover {
+    text-decoration: underline;
+}
+
+.login-page .error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= Index Page Styling ================= */
+.index-page .welcome-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1;
+    animation: fadeIn 1.2s ease;
+}
+
+.index-page .main-title {
+    font-size: 40px;
+    font-weight: 900;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.index-page .welcome-msg {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.index-page .quote {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.index-page .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.index-page .index-btn {
+    padding: 12px 25px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.index-page .index-btn:hover {
+    background-color: #0056b3;
+}
+
+/* ========================= Register Page Styling ========================= */
+
+body.register-page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Container holding the registration form */
+.register-page .container {
+    background: rgba(255, 255, 255, 0.92);
+    color: #111;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 420px;
+    text-align: center;
+    margin: 80px auto;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Headline */
+.register-page .container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #111;
+}
+
+/* Input fields */
+.register-page input[type="text"],
+.register-page input[type="email"],
+.register-page input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #f8f8f8;
+}
+
+/* Submit button */
+.register-page input[type="submit"].btn {
+    width: 95%;
+    padding: 12px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.register-page input[type="submit"].btn:hover {
+    background-color: #218838;
+}
+
+/* Links */
+.register-page p {
+    margin-top: 15px;
+    color: #333;
+    font-size: 15px;
+}
+
+.register-page p a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-page p a:hover {
+    text-decoration: underline;
+}
+
+/* Success and Error messages */
+.success {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ========================= Slideshow Background ========================= */
+
+.slideshow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slideshow-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slideShow 50s infinite;
+    opacity: 0;
+}
+
+.slideshow-container img:nth-child(1) { animation-delay: 0s; }
+.slideshow-container img:nth-child(2) { animation-delay: 5s; }
+.slideshow-container img:nth-child(3) { animation-delay: 10s; }
+.slideshow-container img:nth-child(4) { animation-delay: 15s; }
+.slideshow-container img:nth-child(5) { animation-delay: 20s; }
+.slideshow-container img:nth-child(6) { animation-delay: 25s; }
+.slideshow-container img:nth-child(7) { animation-delay: 30s; }
+.slideshow-container img:nth-child(8) { animation-delay: 35s; }
+.slideshow-container img:nth-child(9) { animation-delay: 40s; }
+.slideshow-container img:nth-child(10) { animation-delay: 45s; }
+
+@keyframes slideShow {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    25% { opacity: 1; }
+    30% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========================= Admin Login========================= */
+/* ================= Admin Login Styling ================= */
+
+body.admin-login {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: none; /* Remove white-black gradient */
+}
+
+/* Show slideshow background for admin login */
+body.admin-login .slideshow-container {
+    display: block;
+}
+
+/* Admin login form container */
+body.admin-login .container {
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+body.admin-login .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+body.admin-login .container label {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+body.admin-login .container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+body.admin-login .container input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff55;
+}
+
+body.admin-login .container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+body.admin-login .container button:hover {
+    background-color: #0056b3;
+}
+
+/* Error message */
+body.admin-login .container p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+}
+
+
+/* Admin Panel Styling */
+
+body.admin-panel {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.admin-panel .slideshow-container {
+    display: block;
+}
+
+.admin-panel-box {
+    position: relative;
+    z-index: 2;
+    width: 450px;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.admin-panel-box h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.admin-panel-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.admin-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-btn {
+    display: block;
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.admin-btn:hover {
+    background: #0056b3;
+}
+
+.admin-btn.logout {
+    background: #dc3545;
+}
+
+.admin-btn.logout:hover {
+    background: #a71d2a;
+}
+
+
+/* Parking Page Styling */
+
+body.parking-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.parking-body .slideshow-container {
+    display: block;
+}
+
+/* Card Box */
+.parking-box {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 35px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.parking-box h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #111;
+}
+
+.parking-box p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.parking-box .available {
+    color: green;
+    font-weight: bold;
+}
+
+.parking-box .full {
+    color: red;
+    font-weight: bold;
+}
+
+/* Buttons */
+.parking-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.link-btn {
+    padding: 10px 18px;
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.link-btn:hover {
+    background: #0056b3;
+}
+
+
+/* Check-in Body */
+body.checkin-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Slideshow should be behind the form */
+.slideshow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Form Container */
+.checkin-container {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+}
+
+.checkin-container h2 {
+    margin-bottom: 20px;
+    color: #111;
+    font-size: 26px;
+}
+
+.checkin-container input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.success-msg {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.error-msg {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.checkout-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('../images/car10.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Container */
+.checkout-page .container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 40px 30px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    animation: fadeIn 1.2s ease;
+}
+
+/* Heading */
+.checkout-page h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Inputs */
+.checkout-page input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Submit Button */
+.checkout-page input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff3c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.checkout-page input[type="submit"]:hover {
+    background-color: #e60000;
+}
+
+/* Optional Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.dashboard-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.dashboard-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.dashboard-container h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.dashboard-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dash-btn, .logout-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.dash-btn {
+    background-color: #1e90ff;
+    color: white;
+}
+
+.logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.dash-btn:hover {
+    background-color: #0b74d0;
+}
+
+.logout-btn:hover {
+    background-color: #e60000;
+}
+
+.slideshow-container img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    animation: slideShow 50s infinite;
+}
+
+.slideshow-container img:nth-child(1) { animation-delay: 0s; }
+.slideshow-container img:nth-child(2) { animation-delay: 5s; }
+.slideshow-container img:nth-child(3) { animation-delay: 10s; }
+.slideshow-container img:nth-child(4) { animation-delay: 15s; }
+.slideshow-container img:nth-child(5) { animation-delay: 20s; }
+.slideshow-container img:nth-child(6) { animation-delay: 25s; }
+.slideshow-container img:nth-child(7) { animation-delay: 30s; }
+.slideshow-container img:nth-child(8) { animation-delay: 35s; }
+.slideshow-container img:nth-child(9) { animation-delay: 40s; }
+.slideshow-container img:nth-child(10) { animation-delay: 45s; }
+
+@keyframes slideShow {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    20% { opacity: 1; }
+    30% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+
+
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Background Slideshow */
+.slideshow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Background Images */
+.slideshow-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 50s infinite;
+}
+
+/* Assigning Animation Delay to Each Image */
+.slideshow-container img:nth-child(1) { animation-delay: 0s; }
+.slideshow-container img:nth-child(2) { animation-delay: 5s; }
+.slideshow-container img:nth-child(3) { animation-delay: 10s; }
+.slideshow-container img:nth-child(4) { animation-delay: 15s; }
+.slideshow-container img:nth-child(5) { animation-delay: 20s; }
+.slideshow-container img:nth-child(6) { animation-delay: 25s; }
+.slideshow-container img:nth-child(7) { animation-delay: 30s; }
+.slideshow-container img:nth-child(8) { animation-delay: 35s; }
+.slideshow-container img:nth-child(9) { animation-delay: 40s; }
+.slideshow-container img:nth-child(10) { animation-delay: 45s; }
+
+/* Fade Animation */
+@keyframes fade {
+    0%   { opacity: 0; }
+    8%   { opacity: 1; }
+    20%  { opacity: 1; }
+    28%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+/* Container for Login */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
